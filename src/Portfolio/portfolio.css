@@ -1,0 +1,72 @@
+/* =========Portfolio.css========== */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background: var(--color-bg-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item:hover {
+    border-color: var(--color-bg-variant);
+    background: transparent;
+}
+
+.portfolio-item-img {
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.portfolio-item-btn {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-item-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio-item-group img {
+    width: 3rem;
+}
+
+.portfolio-item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+
+@media screen and (max-width: 1524px) {
+    .portfolio-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =============== SMALL DEVICES ================ */
+@media screen and (max-width: 600px) {
+    .portfolio-container {
+        width: 80%;
+    }
+
+    html {
+        font-size: 12px;
+    }
+}
+

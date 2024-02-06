@@ -1,0 +1,142 @@
+/* =========About.css========== */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    margin-top: 2.5rem;
+}
+
+.about-me-img img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.about-me {
+    width: 85%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about-me-img {
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about-me-img:hover {
+    transform: rotate(0deg);
+}
+
+.about-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about-card-item {
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    text-align: center;
+    padding: .5rem 1rem;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.about-card-item:hover {
+    background: var(--color-light);
+    color: var(--color-bg-variant);
+    border-color: var(--color-primary);
+    transform: scale(1.2);
+}
+
+.about-icon {
+    font-size: 2rem;
+}
+
+.about-content p {
+    line-height: 2.5;
+    margin: 2rem 0;
+    color: var(--color-light);
+    text-align: justify;
+    
+}
+
+.about-content p .html,
+.about-content p .css,
+.about-content p .js,
+.about-content p .react {
+    padding: .25rem .5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.about-content p .html {
+    background: orangered;
+}
+
+.about-content p .css {
+    background: lightskyblue;
+}
+
+.about-content p .js {
+    background: yellow;
+    color: black;
+}
+
+.about-content p .react {
+    background: black;
+    color: lightblue;
+}
+
+.about-content p .next-p {
+    display: block;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--color-primary);
+    text-align: justify;
+}
+
+@media screen and (min-width: 1325px) {
+    .about-card:hover {
+        background: var(--color-light);
+        color: var(--color-bg-variant);
+        border-color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+}
+
+/* =============== MEDIUM DEVICES ================ */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about-me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about-content p {
+        margin: 1.5rem 0 1.5rem;
+    }
+}
+
+/* =============== SMALL DEVICES ================ */
+@media screen and (max-width: 600px) {
+    .about-content {
+        text-align: center;
+    }
+
+    .about-me {
+        width: 65%;
+    }
+}

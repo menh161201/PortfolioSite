@@ -1,0 +1,74 @@
+/* =========Footer.css========== */
+footer {
+    background: var(--color-primary);
+    margin-top: 7rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.footer-logo:hover {
+    color: var(--color-bg-variant);
+}
+
+.permalinks {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    border-radius: 1rem;
+    background: var(--color-bg-variant);
+    padding: 1rem;
+    color: var(--color-primary);
+    border: 1px solid transparent;
+    font-size: 2rem;
+}
+
+.footer-social a:hover {
+    background: transparent;
+    border-color: #3C2A21;
+    color: #3C2A21;
+}
+
+.footer-copyright {
+    margin-bottom: 3.5rem;
+    color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* =============== MEDIUM DEVICES ================ */
+@media screen and (max-width: 1024px) {
+
+    
+}
+
+/* =============== SMALL DEVICES ================ */
+@media screen and (max-width: 600px) {
+    .permalinks {
+        gap: .9rem;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,139 @@
+/* =========Experience.css========== */
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+/**********************************************/
+
+.experience-block {
+     background: var(--color-bg-variant);
+     border-radius: 2rem;
+     padding: 3.5rem 0 5rem;
+     transition: var(--transition);
+}
+
+.experience-block:hover {
+    transform: scale(1.1);
+}
+
+.experience-container:hover  .experience-block:not(:hover){
+    transform: scale(.9);
+}
+
+
+.experience-category span {
+    margin: 1rem;
+    color: var(--color-bg-variant);
+    background: var(--color-primary);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: var(--transition);
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+
+.experience-heading-left:hover {
+    transform: rotate(10deg);
+} 
+
+.experience-heading-right:hover {
+    transform: rotate(-10deg);
+} 
+
+.experience-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experience-item-logo img {
+    width: 5rem;
+    transition: var(--transition);
+}
+
+.experience-item-logo img:hover {
+    transform: scale(1.3);
+}
+
+
+@media screen and (max-width: 1580px) {
+    .experience-detail h4:hover {
+        font-size: 1.5rem;
+    }
+
+    .experience-category  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .experience-category span {
+        margin: 0;
+    }
+
+    
+}
+
+/* =============== MEDIUM DEVICES ================ */
+@media screen and (max-width: 1324px) {
+
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-container {
+        width: 75%;
+    }
+
+    .experience-list-1 {
+        display: grid ;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
+    }
+
+    .experience-list-2 {
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+
+/* =============== SMALL DEVICES ================ */
+@media screen and (max-width: 700px) {
+
+    .experience-category  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .experience-category span {
+        margin: 0;
+    }
+
+    
+}

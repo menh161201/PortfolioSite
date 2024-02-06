@@ -1,0 +1,106 @@
+/* =========Header.css========== */
+header {
+    height: 100vh;
+    padding-top: 4rem;
+   
+}
+
+.header-container {
+    text-align: center;
+    /* height: 100%; */
+    position: relative;
+}
+
+.cta {
+    margin: 2.5rem 0;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.social-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.link ,
+.git {
+    font-size: 1.3rem;
+}
+
+.social-header .link:hover,
+.social-header .git:hover {
+    transform: scale(1.9) rotate(10deg) translateX(3px);
+    color: var(--color-primary);
+}
+.social-header::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent) ;
+    width: 22rem;
+    height: 26rem;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.me img {
+    border-radius: 5rem;
+    width: 80%;
+    margin: auto;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    right: -2rem;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scroll-down:hover span {
+    opacity: 1;
+    transform: translateX(7rem);
+}
+
+.scroll-down  span {
+    font-size: 1.8rem;
+    transition: all .7s ease;
+    opacity: 0;
+}
+
+/* =============== MEDIUM DEVICES ================ */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/* =============== SMALL DEVICES ================ */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .social-header,
+    .scroll-down {
+        display: none;
+    }
+}
